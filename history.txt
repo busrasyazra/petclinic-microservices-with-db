@@ -1,0 +1,59 @@
+    1  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    2  sudo chmod +x /usr/local/bin/docker-compose
+    3  sudo yum install git -y
+    4  sudo yum install java-11-amazon-corretto -y
+    5  java --version
+    6  git clone https://github.com/clarusway/petclinic-microservices-with-db.git
+    7  cd petclinic-microservices-with-db/
+    8  rm -rf .git
+    9  ls a-
+   10  ls -a
+   11  git init
+   12  git branch -m main
+   13  git clone https://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@github.com/busrasyazra/petclinic-microservices-with-db.git
+   14  ls
+   15  rm -r petclinic-microservices-with-db
+   16  ls
+   17  git config --global user.email "busracelenay90@gmail.com"
+   18  git config --global user.name busrasyazra
+   19  git config --list
+   20  git add .
+   21  git commit -m "first"
+   22  git remote add origin https://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@github.com/busrasyazra/petclinic-microservices-with-db.git
+   23  git push origin main
+   24  history
+   25  git checkout main
+   26  git branch dev
+   27  git checkout dev
+   28  git push --set-upstream origin dev
+   29  git checkout main
+   30  git branch release
+   31  git checkout release
+   32  git push --set-upstream origin release
+   33  git checkout dev
+   34  ./mvnw clean test
+   35  ./mvnw clean package
+   36  ./mvnw clean install
+   37  git checkout dev
+   38  git branch feature/msp-4
+   39  git checkout feature/msp-4
+   40  ./mvnw clean package
+   41  git branch
+   42  vim package-with-mvn-wrapper.sh
+   43  ls
+   44  git add .
+   45  git commit -m 'added packaging script'
+   46  git push --set-upstream origin feature/msp-4
+   47  git checkout dev
+   48  git merge feature/msp-4
+   49  git push origin dev
+   50  history
+   51  cat history > history.txt
+   52  echo history > histiry.txt
+   53  ls
+   54  cat history.txt 
+   55  cat histiry.txt 
+   56  rm -rf history.txt histiry.txt 
+   57  ls
+   58  history > echo history.txt
+   59  history > history.txt
