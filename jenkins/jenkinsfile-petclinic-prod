@@ -9,7 +9,7 @@ pipeline {
         ECR_REGISTRY="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
         RANCHER_URL="https://rancher.busracelenay.com"
         // Get the project-id from Rancher UI
-        RANCHER_CONTEXT="c-82fz8:p-9sjq"
+        RANCHER_CONTEXT="c-82fz8:p-9sjqq"
         RANCHER_CREDS=credentials('rancher-petclinic-credentials')
     }
     stages {
